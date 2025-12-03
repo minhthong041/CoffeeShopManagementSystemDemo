@@ -106,25 +106,25 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/view edit delete product.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="View &amp; Edit Staff Info"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="2f" green="54" red="7b" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/view edit delete product.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="View &amp; Edit Staff Info"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnClose">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/close.png"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/close.png"/>
             </Property>
           </Properties>
           <Events>
@@ -230,6 +230,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTable1MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -245,14 +248,17 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Search"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
             </Property>
+            <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="cboFieldSearch">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="12">
                 <StringItem index="0" value="ID"/>
@@ -269,9 +275,6 @@
                 <StringItem index="11" value="Status"/>
               </StringArray>
             </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="14" style="0"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cboFieldSearchActionPerformed"/>
@@ -282,22 +285,22 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Change Order By ID:"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="text" type="java.lang.String" value="Change Order By ID:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="cboSort">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="2">
                 <StringItem index="0" value="INC"/>
                 <StringItem index="1" value="DESC"/>
               </StringArray>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="14" style="0"/>
             </Property>
           </Properties>
           <Events>

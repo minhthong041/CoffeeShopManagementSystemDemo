@@ -96,6 +96,11 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         txtSearch.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -213,6 +218,15 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
         // TODO add your handling code here:
         tableDetails();
     }//GEN-LAST:event_cboSortActionPerformed
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+        // TODO add your handling code here:
+        if (evt.getClickCount() == 2) {
+            int index = jTable1.getSelectedRow();
+            String id = jTable1.getModel().getValueAt(index, 0).toString();
+            new EditStaffInfo(Integer.parseInt(id)).setVisible(true);
+        }
+    }//GEN-LAST:event_jTable1MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

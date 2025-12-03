@@ -407,6 +407,7 @@ public class EditStaffInfo extends javax.swing.JFrame {
         newStaff.setStatus(oldStaff.getStatus());
         StaffDao.update(newStaff);
         setVisible(false);
+        new ViewEditStaffInfo().setVisible(true);
     }//GEN-LAST:event_btnUpdateActionPerformed
 
 
