@@ -67,13 +67,13 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 207, 113));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/view edit delete product.png"))); // NOI18N
-        jLabel1.setText("View & Edit Staff Info");
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(123, 84, 47));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/view edit delete product.png"))); // NOI18N
+        jLabel1.setText("View & Edit Staff Info");
 
-        btnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         btnClose.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
@@ -110,22 +110,22 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Search");
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setText("Search");
 
-        cboFieldSearch.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "First Name", "Middle Name", "Last Name", "Role", "Date Of Hiring", "Date Of Birth", "Sex", "Phone Number", "Email", "Address", "Status" }));
         cboFieldSearch.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cboFieldSearch.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "First Name", "Middle Name", "Last Name", "Role", "Date Of Hiring", "Date Of Birth", "Sex", "Phone Number", "Email", "Address", "Status" }));
         cboFieldSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cboFieldSearchActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Change Order By ID:");
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setText("Change Order By ID:");
 
-        cboSort.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INC", "DESC" }));
         cboSort.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cboSort.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "INC", "DESC" }));
         cboSort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cboSortActionPerformed(evt);
@@ -141,7 +141,7 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1107, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnClose))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
@@ -157,7 +157,7 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel2)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1336, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 9, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -169,7 +169,7 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addGap(34, 34, 34)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cboFieldSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -177,7 +177,7 @@ public class ViewEditStaffInfo extends javax.swing.JFrame {
                     .addComponent(cboSort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
